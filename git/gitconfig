@@ -34,5 +34,11 @@
 	f = "!git ls-files | grep -i"
 	gr = grep -Ii
 	la = "!git config -l | grep alias | cut -c 7-"
+	last = log -1 HEAD
+	# hist = log --pretty=format:\\\"%h %ad | %s%d [%an]\\\" --graph --date=short
+	alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
+	l5 = !git log -5
+	l3 = !git log -3
+	mine = !git log -5 --author 'Andreas'
 [core]
 	editor = vi
