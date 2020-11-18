@@ -2,6 +2,7 @@
 	co = checkout
 	cob = checkout -b
 	coo = !git fetch && git checkout
+	coma = checkout master
 	br = branch
 	brd = branch -d
 	brD = branch -D
