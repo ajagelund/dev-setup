@@ -3,6 +3,7 @@
 	cob = checkout -b
 	coo = !git fetch && git checkout
 	coma = checkout main
+	comas = checkout main
 	br = branch
 	brd = branch -d
 	brD = branch -D
@@ -22,6 +23,7 @@
 	pod = push origin dev
 	pos = push origin staging
 	pom = push origin main
+	poms = push origin master
 	poh = push origin HEAD
 	# pogm = !git push origin gh-pages && git checkout main && git pull origin main && git rebase gh-pages && git push origin main && git checkout gh-pages
 	# pomg = !git push origin main && git checkout gh-pages && git pull origin gh-pages && git rebase main && git push origin gh-pages && git checkout main
@@ -29,6 +31,7 @@
 	plod = pull origin dev
 	plos = pull origin staging
 	plom = pull origin main
+	ploms = pull origin master
 	ploh = pull origin HEAD
 	unstage = reset --soft HEAD^
 	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
@@ -39,8 +42,9 @@
 	last = log -1 HEAD
 	# hist = log --pretty=format:\\\"%h %ad | %s%d [%an]\\\" --graph --date=short
 	alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
-	l5 = !git log -5
-	l3 = !git log -3
+	l3 = !git log -3 --oneline
+	l5 = !git log -5 --oneline
+	l9 = !git log -5 --oneline
 	mine = !git log -5 --author 'Andreas'
 [core]
 	editor = vi
