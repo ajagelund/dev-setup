@@ -1,0 +1,9 @@
+winget install JanDeDobbeleer.OhMyPosh
+#restart terminal
+#add nerd fonts
+#update $PROFILE
+#update terminal settings
+#change vs code font
+
+Install-Module -Name Terminal-Icons -Repository PSGallery
+#update $PROFILE

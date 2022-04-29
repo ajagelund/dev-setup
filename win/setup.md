@@ -40,16 +40,19 @@
   >> curl -L https://github.com/oh-my-fish/oh-my-fish/raw/master/bin/install > install
   >> fish install
 
-  >> #bobthefish
+  ## bobthefish
   >> omf install bobthefish
 
-  >> #powerline fonts
-  >> ./install	
+  ## powerline fonts
+  >> git clone https://github.com/powerline/fonts.git --depth=1
   >> cd fonts
   >> ./install.sh
+  >> cd ..
+  >> rm -rf fonts
 
-  >> install z
-  >> fisher add jorgebucaran/z
+  ## install z
+  >> curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
+  >> fisher add jethrokuan/z rafaelrinaldi/pure
 
 ##MIXED
 
@@ -64,7 +67,7 @@
 ###Ubuntu
 
 3. install 'thefuck'
-  >> sudo apt install python3-dev python3-pip
+  >> sudo apt install python sudo pip python3-pip
   >> sudo pip3 install thefuck
 
 4. install 'diff-so-fancy'
