@@ -1,0 +1,169 @@
+{
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "path",
+          "style": "powerline",
+          "foreground": "#ffffff",
+          "background": "#2e9599",
+          "powerline_symbol": "",
+          "properties": {
+            "prefix": "   ",
+            "home_icon": "~",
+            "folder_separator_icon": " \uE0b1 ",
+            "style": "folder"
+          }
+        },
+        {
+          "type": "git",
+          "style": "powerline",
+          "powerline_symbol": " ",
+          "foreground": "#193549",
+          "background": "#fffb38",
+          "properties": {
+            "display_stash_count": true,
+            "display_upstream_icon": true,
+            "status_colors_enabled": true,
+            "local_changes_color": "#ff9248",
+            "ahead_and_behind_color": "#f26d50",
+            "behind_color": "#f17c37",
+            "ahead_color": "#89d1dc",
+            "stash_count_icon": "\uF692 "
+          }
+        },
+        {
+          "type": "node",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "foreground": "#ffffff",
+          "background": "#6CA35E",
+          "properties": {
+            "prefix": " \uF898 ",
+            "display_version": true
+          }
+        },
+        {
+          "type": "julia",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "foreground": "#111111",
+          "background": "#4063D8",
+          "properties": {
+            "prefix": " \uE624 ",
+            "display_version": true
+          }
+        },
+        {
+          "type": "azfunc",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "foreground": "#ffffff",
+          "background": "#FEAC19",
+          "properties": {
+            "prefix": " \uf0e7",
+            "display_version": false,
+            "display_mode": "files"
+          }
+        },
+        {
+          "type": "aws",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "foreground": "#ffffff",
+          "background_templates": [
+            "{{if contains \"default\" .Profile}}#FFA400{{end}}",
+            "{{if contains \"jan\" .Profile}}#f1184c{{end}}"
+          ],
+          "properties": {
+            "prefix": " \uE7AD ",
+            "display_default": false
+          }
+        },
+        {
+          "type": "root",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "foreground": "#111111",
+          "background": "#ffff66",
+          "properties": {
+            "root_icon": ""
+          }
+        },
+        {
+          "type": "exit",
+          "style": "diamond",
+          "foreground": "#ffffff",
+          "background": "#2e9599",
+          "leading_diamond": "",
+          "trailing_diamond": "",
+          "properties": {
+            "display_exit_code": false,
+            "always_enabled": true,
+            "error_color": "#f1184c",
+            "color_background": true,
+            "prefix": ""
+          }
+        }
+      ]
+    },
+    {
+      "type": "rprompt",
+      "segments": [
+        {
+          "type": "executiontime",
+          "style": "plain",
+          "foreground": "#83769c",
+          "background": "transparent",
+          "leading_diamond": "",
+          "trailing_diamond": "",
+          "properties": {
+            "always_enabled": true,
+            "prefix": "\ufa1e",
+            "postfix": "\u2800"
+          }
+        },
+        {
+          "type": "dotnet",
+          "style": "diamond",
+          "leading_diamond": "",
+          "trailing_diamond": "",
+          "invert_powerline": true,
+          "foreground": "#000000",
+          "background": "#0077c2",
+          "properties": {
+            "prefix": " \uE77F "
+          }
+        },
+        {
+          "type": "ytm",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B2",
+          "invert_powerline": true,
+          "foreground": "#111111",
+          "background": "#1BD760",
+          "properties": {
+            "prefix": " \uF167 ",
+            "paused_icon": " ",
+            "playing_icon": " "
+          }
+        },
+        {
+          "type": "time",
+          "style": "diamond",
+          "leading_diamond": "",
+          "trailing_diamond": "",
+          "invert_powerline": true,
+          "background": "#2e9599",
+          "foreground": "#111111"
+        }
+      ]
+    }
+  ],
+  "final_space": true,
+  "console_title": true,
+  "console_title_style": "template",
+  "console_title_template": "{{ .Shell }} in {{ .Folder }}"
+}
