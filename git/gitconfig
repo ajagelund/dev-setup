@@ -44,7 +44,7 @@
 	alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
 	l3 = !git log -3 --oneline
 	l5 = !git log -5 --oneline
-	l9 = !git log -5 --oneline
-	mine = !git log -5 --author 'Andreas'
+	l9 = !git log -9 --oneline
+	mine = !git log -10 --author 'Andreas'
 [core]
 	editor = vi
