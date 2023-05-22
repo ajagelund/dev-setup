@@ -3,7 +3,8 @@
 	cob = checkout -b
 	coo = !git fetch && git checkout
 	coma = checkout main
-	comas = checkout main
+	comas = checkout master
+	core = checkout release
 	br = branch
 	brd = branch -d
 	brD = branch -D
@@ -45,6 +46,6 @@
 	l3 = !git log -3 --oneline
 	l5 = !git log -5 --oneline
 	l9 = !git log -9 --oneline
-	mine = !git log -10 --author 'Andreas'
+	mine = !git log -10 --author 'Andreas' --oneline
 [core]
 	editor = vi
